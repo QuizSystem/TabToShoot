@@ -10,6 +10,7 @@ public class AdsManager : MonoBehaviour {
 		string appId = "101928";
 		string securityToken = "432cf403d42cc9f3e169110c1380025f";
 		Fyber.With(appId).WithSecurityToken(securityToken).Start();
+		OfferWallRequester.Create().Request();
 	}
 
 	void Update () {
@@ -26,11 +27,6 @@ public class AdsManager : MonoBehaviour {
 		print("Click Pause");
 		OfferWallRequester.Create().Request();
 		ShowOfferWall ();
-	}
-
-	public void onClickNew() {
-		print("Click New");
-		// todo: show ironsrc
 	}
 
 	private void ShowOfferWall() {
@@ -86,6 +82,7 @@ public class AdsManager : MonoBehaviour {
 			Debug.Log("Ofw closed with result: " + result.Status +
 				" and message: " + result.Message);
 		}
+		OfferWallRequester.Create().Request();
 	}
 
 }
