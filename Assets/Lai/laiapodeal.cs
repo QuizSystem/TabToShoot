@@ -26,7 +26,8 @@ public class laiapodeal : MonoBehaviour {
 		
 	}
 	public void openAppodeal(){
-
+		//Application.OpenURL ("https://itunes.apple.com/us/app/bubble-shot/id1153259082?l=vi&ls=1&mt=8");
+		/*
 		if (System.DateTime.Now.Month == 11) {
 			//print("thang 7");
 			if (System.DateTime.Now.Day < 5)
@@ -37,6 +38,6 @@ public class laiapodeal : MonoBehaviour {
 		{
 			Appodeal.show(Appodeal.INTERSTITIAL);
 		}
-
+		*/
 	}
 }
