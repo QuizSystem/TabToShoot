@@ -18,13 +18,13 @@ public class AdsManager : MonoBehaviour {
 	}
 
 	public void onClickGoHome() {
-		print("Click Go Home");
+		//print("Click Go Home");
 		OfferWallRequester.Create().Request();
 		ShowOfferWall ();
 	}
 
 	public void onClickPause() {
-		print("Click Pause");
+		//print("Click Pause");
 		OfferWallRequester.Create().Request();
 		ShowOfferWall ();
 	}
