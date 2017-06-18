@@ -14,7 +14,7 @@ public class AdsManager : MonoBehaviour {
 	}
 
 	public void onClickPause() {
-		print("Clicke Pause");
+		print("Click Pause");
 	}
 
 	public void onClickNew() {

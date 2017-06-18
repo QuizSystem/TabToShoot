@@ -2,7 +2,7 @@
 using System.Collections;
 using SimpleJSON;
 public class LLogin : MonoBehaviour {
-
+	/*
 	IEnumerator Start(){
 
 		WWWForm form = new WWWForm();
@@ -51,4 +51,5 @@ public class LLogin : MonoBehaviour {
 		}
 			
 	}
+	*/
 }
