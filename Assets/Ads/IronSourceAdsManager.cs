@@ -14,8 +14,8 @@ public class IronSourceAdsManager : MonoBehaviour {
 		string result = www.text;
 		var json = JSON.Parse(result);
 		string application_key = json["application_key"];
-		print ("json " + result);
-		print ("application_key " + application_key);
+		//print ("json " + result);
+		//print ("application_key " + application_key);
 
 		if (string.IsNullOrEmpty (application_key)) {
 			string appKeyDefault = "4859b10d";
@@ -37,7 +37,7 @@ public class IronSourceAdsManager : MonoBehaviour {
 	}
 
 	public void onClickNew() {
-		print("Click New");
+		//print("Click New");
 		ShowOfferwallButtonClicked ();
 	}
 
