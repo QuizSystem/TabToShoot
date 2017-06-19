@@ -26,9 +26,9 @@ public class IronSourceAdsManager : MonoBehaviour {
 	}
 		
 	void initSDKIronSource (string appKey) {
-		//string uniqueUserId = "demoUserUnity";
+		string uniqueUserId = SystemInfo.deviceUniqueIdentifier;//"demoUserUnity";
 		//string appKey = "4859b10d";
-		//IronSource.Agent.setUserId (uniqueUserId);
+		IronSource.Agent.setUserId (uniqueUserId);
 		IronSource.Agent.init (appKey);
 	}
 
