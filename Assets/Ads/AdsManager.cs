@@ -8,8 +8,12 @@ public class AdsManager : MonoBehaviour {
 
 	void Start () {
 		string appId = "101928";
+		string userId = SystemInfo.deviceUniqueIdentifier;
 		string securityToken = "432cf403d42cc9f3e169110c1380025f";
-		Fyber.With(appId).WithSecurityToken(securityToken).Start();
+		Fyber.With(appId)
+			.WithUserId(userId)
+			.WithSecurityToken(securityToken)
+			.Start();
 		OfferWallRequester.Create().Request();
 	}
 
